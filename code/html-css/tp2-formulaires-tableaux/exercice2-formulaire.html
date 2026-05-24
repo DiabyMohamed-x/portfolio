@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaire HTML5</title>
+  </head>
+  <body>
+    <h1>Formulaire d'inscription</h1>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Identité</legend>
+
+        <p>
+          <label><input type="radio" name="civilite" value="m"> M.</label>
+          <label><input type="radio" name="civilite" value="mme"> Mme</label>
+          <label><input type="radio" name="civilite" value="autre"> Autre</label>
+        </p>
+
+        <p>
+          <label for="prenom">Prénom</label>
+          <input id="prenom" name="prenom" type="text" required>
+        </p>
+
+        <p>
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" type="text" required>
+        </p>
+
+        <p>
+          <label for="naissance">Date de naissance</label>
+          <input id="naissance" name="naissance" type="date" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Coordonnées</legend>
+
+        <p>
+          <label for="adresse">Adresse</label>
+          <textarea id="adresse" name="adresse" rows="3" required></textarea>
+        </p>
+
+        <p>
+          <label for="code-postal">Code postal</label>
+          <input id="code-postal" name="code-postal" type="text" pattern="[0-9]{5}" required>
+        </p>
+
+        <p>
+          <label for="ville">Ville</label>
+          <input id="ville" name="ville" type="text" required>
+        </p>
+
+        <p>
+          <label for="telephone">Téléphone</label>
+          <input id="telephone" name="telephone" type="tel" required>
+        </p>
+
+        <p>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informations professionnelles</legend>
+
+        <p>
+          <label for="situation">Situation</label>
+          <select id="situation" name="situation">
+            <option>Étudiant</option>
+            <option>Salarié</option>
+            <option>Demandeur d'emploi</option>
+            <option>Retraité</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="niveau">Niveau d'études</label>
+          <select id="niveau" name="niveau">
+            <option>Bac</option>
+            <option>Bac+2</option>
+            <option>Bac+3</option>
+            <option>Bac+5</option>
+            <option>Doctorat</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="domaine">Domaine</label>
+          <input id="domaine" name="domaine" type="text">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Validation</legend>
+        <p>
+          <label>
+            <input type="checkbox" name="cgu" required>
+            J'accepte les conditions d'utilisation
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="newsletter">
+            J'accepte de recevoir la newsletter
+          </label>
+        </p>
+      </fieldset>
+
+      <button type="submit">Valider l'inscription</button>
+    </form>
+  </body>
+</html>

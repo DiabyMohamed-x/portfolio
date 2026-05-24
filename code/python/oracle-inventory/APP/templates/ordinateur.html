@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <title>Parc Informatique</title>
+</head>
+
+<body>
+
+<h1>Parc Informatique</h1>
+
+<div class="container">
+
+{% for ordinateur in ordinateurs %}
+
+<div class="card">
+
+    <div class="title">
+        {{ ordinateur.cpu_model }}
+    </div>
+
+    <div class="info">
+        <div class="label">Architecture</div>
+        <div class="value">{{ ordinateur.cpu_arch }}</div>
+    </div>
+
+    <div class="info">
+        <div class="label">Cœurs CPU</div>
+        <div class="value">{{ ordinateur.cpu_cores }}</div>
+    </div>
+
+    <div class="info">
+        <div class="label">RAM Totale</div>
+        <div class="value">{{ ordinateur.ram_total }}</div>
+    </div>
+
+    <div class="info">
+        <div class="label">RAM Utilisée</div>
+        <div class="value">{{ ordinateur.ram_used }}</div>
+    </div>
+
+    <div class="info">
+        <div class="label">RAM Modèle</div>
+        <div class="value">{{ ordinateur.ram_model }}</div>
+    </div>
+
+    <div class="info">
+        <div class="label">Adresse MAC</div>
+        <div class="value">{{ ordinateur.mac_address }}</div>
+    </div>
+
+    <div class="info">
+        <div class="label">OS</div>
+        <div class="value">{{ ordinateur.os }}</div>
+    </div>
+
+    <div class="info">
+        <div class="label">Kernel</div>
+        <div class="value">{{ ordinateur.kernel }}</div>
+    </div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule magique</title>
+</head>
+<body>
+  <h1>Calcule magique</h1>
+
+  <form id="magicForm">
+    <div>
+      <label for="taille">Donne ta taille : </label>
+      <input type="number" id="taille" step="0.01" required>
+    </div>
+
+    <div>
+      <label for="age">Donne ton age : </label>
+      <input type="number" id="age" required>
+    </div>
+
+    <div>
+      <button type="submit" id="calculeButton">Calcule magique !</button>
+    </div>
+  </form>
+
+  <p id="numeroMagique"></p>
+
+  <script src="calculemagique.js"></script>
+</body>
+</html>

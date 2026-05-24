@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      data-config-meta="description"
+      name="description"
+      content="Portfolio technique : développement, systèmes, Python, C, SQL, Linux et projets backend."
+    />
+    <title>Portfolio technique</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+        <span class="brand-mark" data-config-text="initials">DM</span>
+        <span data-config-text="fullName">Diaby Mohamed</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#approche">Approche</a>
+        <a href="#stack">Stack</a>
+        <a href="#projets">Projets</a>
+        <a href="#progression">Progression</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-link" href="https://github.com/DiabyMohamed-x" target="_blank" rel="noreferrer" data-config-link="github">GitHub</a>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-hidden="true">
+          <div class="scene-panel scene-panel-left">
+            <div class="panel-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre><code>$ tree lab
+.
+├── api/
+├── scripts/
+├── c-tools/
+└── docs/
+
+$ git status
+branch main
+working tree clean</code></pre>
+          </div>
+          <div class="scene-panel scene-panel-right">
+            <div class="panel-bar panel-bar-muted">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre><code>GET /projects
+200 OK
+
+python app.py
+logs: enabled
+db: sqlite
+mode: learning</code></pre>
+          </div>
+          <div class="scene-grid"></div>
+        </div>
+
+        <div class="hero-content">
+          <figure class="profile-photo" data-profile-photo hidden>
+            <img src="" alt="" data-profile-photo-img />
+          </figure>
+          <p class="eyebrow">Portfolio technique</p>
+          <h1 id="hero-title" data-config-text="fullName">Diaby Mohamed</h1>
+          <p class="hero-subtitle" data-config-text="role">Étudiant en informatique — développement, systèmes & projets techniques.</p>
+          <p class="hero-copy">
+            Développement, systèmes et backend : projets techniques, code,
+            scripts, interfaces et APIs.
+          </p>
+
+          <div class="tech-line" aria-label="Technologies principales">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>Linux</span>
+            <span>Bash</span>
+            <span>Git</span>
+            <span>Docker</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projets">Voir les projets</a>
+            <a class="button button-secondary" href="https://github.com/DiabyMohamed-x" target="_blank" rel="noreferrer" data-config-link="github">GitHub</a>
+            <a class="button button-ghost" href="#contact" data-config-link="cv" data-hide-if-empty>CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" id="approche" aria-labelledby="approach-title">
+        <div class="section-heading">
+          <p class="eyebrow">Profil</p>
+          <h2 id="approach-title">Étudiant en informatique, orienté développement et systèmes.</h2>
+        </div>
+        <div class="intro-grid">
+          <p class="lead">
+            Ce portfolio rassemble mes projets techniques, exercices, prototypes
+            et réalisations. Il met en avant le code, l'organisation, la documentation
+            et les compétences travaillées.
+          </p>
+          <div class="method-list" aria-label="Méthode de travail">
+            <span>Programmation en C, Python et JavaScript</span>
+            <span>Projets personnels, encadrés et techniques</span>
+            <span>Terminal Linux, Git et organisation de fichiers</span>
+            <span>README, captures et explications techniques</span>
+            <span>Bases backend, SQL et APIs REST</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stack" aria-labelledby="stack-title">
+        <div class="section-heading">
+          <p class="eyebrow">Stack technique</p>
+          <h2 id="stack-title">Des bases solides.</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card">
+            <div class="stack-card-header">
+              <span class="stack-icon">01</span>
+              <h3>Langages</h3>
+            </div>
+            <ul>
+              <li>Python</li>
+              <li>C</li>
+              <li>JavaScript</li>
+              <li>Bash</li>
+              <li>SQL</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-card-header">
+              <span class="stack-icon">02</span>
+              <h3>Backend</h3>
+            </div>
+            <ul>
+              <li>FastAPI</li>
+              <li>APIs REST</li>
+              <li>SQLite</li>
+              <li>SQLModel</li>
+              <li>Jinja2</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-card-header">
+              <span class="stack-icon">03</span>
+              <h3>Outils</h3>
+            </div>
+            <ul>
+              <li>Git</li>
+              <li>Linux</li>
+              <li>Docker</li>
+              <li>curl / jq</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-card-header">
+              <span class="stack-icon">04</span>
+              <h3>Concepts</h3>
+            </div>
+            <ul>
+              <li>Logging</li>
+              <li>Endpoint JSON</li>
+              <li>Persistance de données</li>
+              <li>Formulaires HTML</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projets" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projets</p>
+          <h2 id="projects-title">Projets, TP et exercices structurés par domaine.</h2>
+        </div>
+
+        <div class="filter-bar" aria-label="Filtrer les projets">
+          <button class="filter-button is-active" type="button" data-filter="all">Tous</button>
+          <button class="filter-button" type="button" data-filter="backend">Web / Backend</button>
+          <button class="filter-button" type="button" data-filter="python">Python</button>
+          <button class="filter-button" type="button" data-filter="linux">Linux</button>
+          <button class="filter-button" type="button" data-filter="c">C</button>
+          <button class="filter-button" type="button" data-filter="javascript">JavaScript</button>
+          <button class="filter-button" type="button" data-filter="htmlcss">HTML / CSS</button>
+          <button class="filter-button" type="button" data-filter="docker">Docker</button>
+        </div>
+
+        <div class="projects-grid" data-projects>
+          <article class="project-card" data-category="backend python linux">
+            <div class="project-topline">
+              <span class="status status-progress">En cours</span>
+              <span class="project-type">Web / Backend</span>
+            </div>
+            <h3>Oracle Inventory</h3>
+            <p>
+              Projet copié depuis mon workspace : API FastAPI, modèles SQLModel,
+              base SQLite, templates Jinja2 et script Bash d'inventaire machine.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>Python, FastAPI, SQLModel, SQLite, Bash</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Endpoint JSON, formulaires, utilisateurs, machines</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/python/oracle-inventory/README.md">README projet</a>
+              <a href="code/python/oracle-inventory/APP/main.py">Voir main.py</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="backend python">
+            <div class="project-topline">
+              <span class="status">Dans Oracle</span>
+              <span class="project-type">FastAPI</span>
+            </div>
+            <h3>Routes FastAPI & formulaires</h3>
+            <p>
+              Routes pour afficher les ordinateurs, créer des utilisateurs, vérifier
+              l'unicité d'un badge et recevoir un JSON depuis le script Bash.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>FastAPI, Form, Jinja2, SQLModel</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>GET/POST, formulaire, template, base SQLite</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/python/oracle-inventory/APP/main.py">Voir les routes</a>
+              <a href="code/python/oracle-inventory/APP/models.py">Voir les modèles</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="python linux">
+            <div class="project-topline">
+              <span class="status">Apprentissage</span>
+              <span class="project-type">Organisation</span>
+            </div>
+            <h3>Organisation projet Python</h3>
+            <p>
+              Travail autour d'un dossier applicatif Python : <code>requirements.txt</code>,
+              environnement virtuel, fichiers FastAPI, templates, static et README.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>Python, venv, requirements, Uvicorn</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Lancer, documenter et ranger une petite app backend</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/python/oracle-inventory/README.md">README projet</a>
+              <a href="code/python/oracle-inventory/APP/requirements.txt">requirements.txt</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="linux python">
+            <div class="project-topline">
+              <span class="status status-progress">En cours</span>
+              <span class="project-type">Système / Linux</span>
+            </div>
+            <h3>Script Bash d'inventaire machine</h3>
+            <p>
+              Script terminal pour récupérer des informations système puis les envoyer
+              vers l'API Oracle Inventory avec un JSON.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>Linux, Bash, jq, curl</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>CPU, RAM, réseau, OS, kernel, envoi HTTP</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/python/oracle-inventory/oracle.sh">Voir le script</a>
+              <a href="code/python/oracle-inventory/README.md">README projet</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="docker linux">
+            <div class="project-topline">
+              <span class="status">Bases</span>
+              <span class="project-type">Docker</span>
+            </div>
+            <h3>Bases Docker & commandes</h3>
+            <p>
+              Notes de base pour comprendre les conteneurs, lancer une image,
+              lister les conteneurs/images et manipuler les commandes principales.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>Docker, terminal Linux</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Comprendre les commandes avant un vrai projet Docker</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/docker/README.md">Notes Docker</a>
+              <a href="#progression">Progression</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="c">
+            <div class="project-topline">
+              <span class="status">TP 2026</span>
+              <span class="project-type">C / Exercices</span>
+            </div>
+            <h3>Parcours C : fonctions, conditions et tableaux</h3>
+            <p>
+              Série de TP pour apprendre la compilation avec GCC, les procédures, les fonctions,
+              les conditionnelles, les boucles, les tableaux et les chaînes de caractères.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>C, GCC, Linux, terminal</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Écrire, compiler, tester et découper un programme en fonctions</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/c/README.md">README C</a>
+              <a href="code/c/tp2-fonctions-conditionnelles/src/tp2.c">Exemple de code</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="c">
+            <div class="project-topline">
+              <span class="status">Mini-projet C</span>
+              <span class="project-type">C / Terminal</span>
+            </div>
+            <h3>Jeu du morpion en C</h3>
+            <p>
+              Jeu à deux joueurs dans le terminal : affichage de la grille, lecture des coups,
+              validation des cases et détection d'une victoire par ligne, colonne ou diagonale.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>C, tableaux, fonctions, terminal</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Boucles, conditions, passage de paramètres, logique de jeu</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/c/mini-projet-morpion/README.md">README morpion</a>
+              <a href="code/c/mini-projet-morpion/src/morpion.c">Voir le code</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="htmlcss">
+            <div class="project-topline">
+              <span class="status">TP 2026</span>
+              <span class="project-type">HTML / CSS</span>
+            </div>
+            <h3>TP HTML/CSS : pages, formulaires et layouts</h3>
+            <p>
+              Exercices autour des balises HTML, listes, tableaux, formulaires, box model,
+              Flexbox, CSS Grid et responsive.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>HTML5, CSS3, Flexbox, Grid</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Structure, formulaires, mise en page, responsive</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/html-css/README.md">README HTML/CSS</a>
+              <a href="code/html-css/tp6-grid-responsive/recettes.html">Voir un TP</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <div class="project-topline">
+              <span class="status">Cours 1</span>
+              <span class="project-type">JavaScript</span>
+            </div>
+            <h3>Bases JavaScript & premières interactions</h3>
+            <p>
+              Premiers scripts reliés à des pages HTML : variables, calculs simples,
+              modification du contenu avec <code>innerHTML</code>, boutons et événements.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>HTML, CSS, JavaScript</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Variables, conditions, calculs, premiers événements</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/javascript/cours-1-bases/index.html">Voir les exercices</a>
+              <a href="code/javascript/cours-1-bases/README.md">README</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <div class="project-topline">
+              <span class="status">Cours 2</span>
+              <span class="project-type">Mini-jeu</span>
+            </div>
+            <h3>Jeu du nombre mystère</h3>
+            <p>
+              Mini-jeu où l'utilisateur doit deviner un nombre entre 1 et 100.
+              Le script gère les essais, le compteur, l'historique et le reset.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>HTML, JavaScript, DOM</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Math.random, input, conditions, historique</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/javascript/cours-2-nombre-secret/indexJeuDevineSecret.html">Voir la démo</a>
+              <a href="code/javascript/cours-2-nombre-secret/README.md">README</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <div class="project-topline">
+              <span class="status">Cours 3</span>
+              <span class="project-type">Mini-jeu</span>
+            </div>
+            <h3>Pierre-feuille-ciseaux</h3>
+            <p>
+              Jeu contre l'ordinateur : choix utilisateur via boutons, choix aléatoire
+              de l'ordinateur, comparaison des coups et affichage du résultat.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>HTML, JavaScript</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Tableaux, fonctions, addEventListener, logique de jeu</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/javascript/cours-3-pierre-feuille-ciseaux/jeuPFCv3.html">Voir la démo</a>
+              <a href="code/javascript/cours-3-pierre-feuille-ciseaux/README.md">README</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <div class="project-topline">
+              <span class="status">Cours 4</span>
+              <span class="project-type">DOM</span>
+            </div>
+            <h3>To-do list</h3>
+            <p>
+              Liste de tâches avec formulaire : récupération des champs, ajout dans
+              un tableau d'objets et affichage dynamique des tâches dans la page.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>HTML, JavaScript</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Tableau d'objets, formulaire, rendu dynamique</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/javascript/cours-4-todolist/todolist2026V3.html">Voir la démo</a>
+              <a href="code/javascript/cours-4-todolist/README.md">README</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="javascript htmlcss">
+            <div class="project-topline">
+              <span class="status">Cours 5</span>
+              <span class="project-type">Interface</span>
+            </div>
+            <h3>Interface cinéma & votes</h3>
+            <p>
+              Interface de cartes de films avec données en tableau d'objets,
+              génération HTML en JavaScript et mise à jour d'un score de vote.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>HTML, CSS, JavaScript, Bootstrap</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Objets, template strings, cartes, score dynamique</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="code/javascript/cours-5-cinema/cinemaNetflux.html">Voir la démo</a>
+              <a href="code/javascript/cours-5-cinema/README.md">README</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section lab-notes" id="lab-notes" aria-labelledby="notes-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Documentation</p>
+          <h2 id="notes-title">Chaque dossier doit permettre de comprendre le travail réalisé.</h2>
+        </div>
+        <div class="notes-grid">
+          <article>
+            <h3>Objectif</h3>
+            <p>Ce que le projet devait faire et quelle compétence il travaille.</p>
+          </article>
+          <article>
+            <h3>Lancement</h3>
+            <p>Commandes utiles pour compiler, lancer ou tester le projet.</p>
+          </article>
+          <article>
+            <h3>Code</h3>
+            <p>Fichiers principaux, fonctions importantes et choix techniques.</p>
+          </article>
+          <article>
+            <h3>Amélioration</h3>
+            <p>Ce qui pourrait être ajouté ou corrigé dans une prochaine version.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="progression" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">Progression</p>
+          <h2 id="timeline-title">Progression technique.</h2>
+        </div>
+        <div class="timeline" aria-label="Frise chronologique technique">
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <h3>Python & terminal Linux</h3>
+            <p>Organisation de projet, terminal, environnement Python, requirements et lancement local.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <h3>HTML / CSS</h3>
+            <p>Pages HTML, listes, liens, tableaux, formulaires, box model, Flexbox, Grid et responsive.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <h3>JavaScript & DOM</h3>
+            <p>Cours 1 à 5 : bases JS, nombre secret, PFC, to-do list, cartes cinéma et votes.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <h3>APIs & FastAPI</h3>
+            <p>Routes GET/POST, endpoint JSON, formulaires, templates, SQLModel et SQLite.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <h3>SQL & persistance</h3>
+            <p>Modèles SQLModel, SQLite, utilisateurs, badges uniques et ordinateurs inventoriés.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Fév-avr 2026</span>
+            <h3>Langage C</h3>
+            <p>Compilation GCC, fonctions, conditions, boucles, tableaux, chaînes et mini-projet morpion.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <h3>Docker & tooling</h3>
+            <p>Bases Docker, commandes simples, environnements Python, requirements et lancement local.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section now-section" aria-labelledby="now-title">
+        <div class="now-panel">
+          <div>
+            <p class="eyebrow">Veille & objectifs</p>
+            <h2 id="now-title">En ce moment</h2>
+          </div>
+          <ul class="now-list">
+            <li>Projet API backend avec FastAPI</li>
+            <li>Docker & conteneurisation</li>
+            <li>Architecture backend simple et lisible</li>
+            <li>Documentation technique des projets</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-layout">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Contact et liens techniques.</h2>
+            <p>
+              Retrouvez ici les liens utiles pour consulter mon travail, accéder au code
+              et me contacter.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="https://github.com/DiabyMohamed-x" target="_blank" rel="noreferrer" data-config-link="github">Ouvrir GitHub</a>
+            <a class="button button-secondary" href="mailto:0diabymohamed0@gmail.com" data-config-link="email" data-config-text="email">0diabymohamed0@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 <span data-config-text="fullName">Diaby Mohamed</span></span>
+      <a href="#accueil">Retour en haut</a>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

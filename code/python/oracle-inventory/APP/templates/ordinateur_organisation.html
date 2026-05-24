@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinateurs et organisations</title>
+</head>
+
+<body>
+
+    <h1>Ordinateurs et organisations</h1>
+
+    <h2>Ordinateurs</h2>
+
+    <ul>
+        {% for ordinateur in ordinateurs %}
+        <li>
+            {{ ordinateur.serial_number }} - {{ ordinateur.cpu_model }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Organisations</h2>
+
+    <ul>
+        {% for organisation in organisations %}
+        <li>
+            {{ organisation.name }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p>
+        <a href="/">Retour à l'accueil</a>
+    </p>
+
+</body>
+
+</html>

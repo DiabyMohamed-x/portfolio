@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard Flexbox</title>
+    <link rel="stylesheet" href="dashboard.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Dashboard</div>
+      <div class="user-info">
+        <span>Diaby Mohamed</span>
+        <button type="button">Déconnexion</button>
+      </div>
+    </nav>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <ul class="menu">
+          <li>Accueil</li>
+          <li>Statistiques</li>
+          <li>Projets</li>
+          <li>Messages</li>
+          <li>Paramètres</li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <div class="content-header">
+          <h1>Bienvenue sur votre tableau de bord</h1>
+          <button class="btn-new" type="button">+ Nouveau projet</button>
+        </div>
+
+        <section class="stats">
+          <div class="stat-card">
+            <h3>Projets</h3>
+            <p class="number">12</p>
+            <p class="label">En cours</p>
+          </div>
+          <div class="stat-card">
+            <h3>Messages</h3>
+            <p class="number">48</p>
+            <p class="label">Non lus</p>
+          </div>
+          <div class="stat-card">
+            <h3>Tâches</h3>
+            <p class="number">7</p>
+            <p class="label">Urgentes</p>
+          </div>
+          <div class="stat-card">
+            <h3>Utilisateurs</h3>
+            <p class="number">156</p>
+            <p class="label">Actifs</p>
+          </div>
+        </section>
+
+        <section class="activity">
+          <h2>Activité récente</h2>
+          <div class="activity-item">
+            <div class="activity-time">Il y a 2h</div>
+            <p>Création d'un nouveau projet HTML/CSS.</p>
+          </div>
+          <div class="activity-item">
+            <div class="activity-time">Hier</div>
+            <p>Mise à jour d'une carte de statistiques.</p>
+          </div>
+          <div class="activity-item">
+            <div class="activity-time">Cette semaine</div>
+            <p>Ajout d'une sidebar et d'un menu vertical.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

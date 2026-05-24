@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestion des bulletins scolaires</title>
+  </head>
+  <body>
+    <header>
+      <h1>Gestion des bulletins scolaires</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Saisie des notes</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="etudiant">Nom de l'étudiant</label>
+            <input id="etudiant" name="etudiant" type="text" required>
+          </p>
+
+          <p>
+            <label for="matiere">Matière</label>
+            <select id="matiere" name="matiere">
+              <option>Mathématiques</option>
+              <option>Français</option>
+              <option>Anglais</option>
+              <option>Histoire</option>
+              <option>Sciences</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="note">Note</label>
+            <input id="note" name="note" type="number" min="0" max="20" step="0.5" required>
+          </p>
+
+          <p>
+            <label for="coefficient">Coefficient</label>
+            <input id="coefficient" name="coefficient" type="number" min="1" max="5" value="1">
+          </p>
+
+          <button type="submit">Ajouter la note</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Tableau récapitulatif</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Étudiant</th>
+              <th>Matière</th>
+              <th>Note</th>
+              <th>Coefficient</th>
+              <th>Note pondérée</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alice Martin</td>
+              <td>Mathématiques</td>
+              <td>15</td>
+              <td>3</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>Alice Martin</td>
+              <td>Français</td>
+              <td>14</td>
+              <td>2</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>Alice Martin</td>
+              <td>Anglais</td>
+              <td>16</td>
+              <td>2</td>
+              <td>32</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="4">Moyenne pondérée</th>
+              <td><strong>15</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Statistiques</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Nombre de notes</th>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>Note minimale</th>
+              <td>14</td>
+            </tr>
+            <tr>
+              <th>Note maximale</th>
+              <td>16</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
