@@ -10,7 +10,7 @@ window.portfolioConfig = {
 
   // Mets un chemin de PDF ici quand ton CV sera prêt, par exemple "assets/cv.pdf".
   // Laisse vide pour masquer automatiquement le bouton CV.
-  cvUrl: "",
+  cvUrl: "assets/cv.pdf",
 
   photo: {
     // Passe à true si tu veux afficher une photo dans le hero.
