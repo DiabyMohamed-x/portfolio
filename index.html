@@ -156,6 +156,8 @@ POST /machines  200 OK
               <li>Git</li>
               <li>Linux</li>
               <li>Docker</li>
+              <li>GitLab CI</li>
+              <li>pytest</li>
               <li>curl / jq</li>
               <li>VS Code</li>
             </ul>
@@ -170,6 +172,8 @@ POST /machines  200 OK
               <li>Endpoint JSON</li>
               <li>Persistance de données</li>
               <li>Formulaires HTML</li>
+              <li>CI/CD</li>
+              <li>Intégration d'API LLM</li>
             </ul>
           </article>
         </div>
@@ -193,6 +197,33 @@ POST /machines  200 OK
         </div>
 
         <div class="projects-grid" data-projects>
+          <article class="project-card" data-category="backend python docker">
+            <div class="project-topline">
+              <span class="status status-progress">Nouveau</span>
+              <span class="project-type">FastAPI / LLM</span>
+            </div>
+            <h3>Service LLM</h3>
+            <p>
+              Petit service FastAPI qui appelle une API de LLM (DeepSeek, format
+              compatible OpenAI), avec tests automatisés, image Docker et pipeline
+              GitLab CI.
+            </p>
+            <dl class="project-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>Python, FastAPI, Docker, pytest, GitLab CI</dd>
+              </div>
+              <div>
+                <dt>Objectif</dt>
+                <dd>Endpoints /health et /ask, clé d'API hors du code, CI/CD</dd>
+              </div>
+            </dl>
+            <div class="project-actions">
+              <a href="https://github.com/DiabyMohamed-x/service-llm-" target="_blank" rel="noreferrer">Voir sur GitHub</a>
+              <a href="https://github.com/DiabyMohamed-x/service-llm-/blob/HEAD/app.py" target="_blank" rel="noreferrer">Voir app.py</a>
+            </div>
+          </article>
+
           <article class="project-card" data-category="backend python linux">
             <div class="project-topline">
               <span class="status status-progress">En cours</span>
